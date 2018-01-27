@@ -37,8 +37,8 @@ class Today extends Component {
 		if (!navigator.onLine) {
 			return this.restoreStateFromLocalStorage();
 		}
-		this.pusher = new Pusher('fd1172560d800e56d65f', {
-			cluster: 'us2',
+		this.pusher = new Pusher('', {
+			cluster: '',
 			encrypted: true
 		});
 		this.prices = this.pusher.subscribe('coin-prices');
